@@ -1,16 +1,26 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 
+import Card from './components/Card';
+
+
 // function App(){
 //     return <h1>Sirius</h1>;
 // }
 
-const names = ['Si', 'Ri', 'Us']
+const App = () => {
 
-function App(){
         return(
         <div>
-            {names.map(name => (<h1>{name}</h1>))}
+            <div class="card-group">
+
+            <Card cardTitle="Baku"/>
+
+            <Card cardTitle="Absheron"/>
+
+            <Card cardTitle="Khazar"/>
+
+            </div>
         </div>
         );
 }
